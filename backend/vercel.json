@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "redirects": [
+    { "source": "/", "destination": "https://one-simulation-client-ten.vercel.app", "permanent": true }
+  ]
+  }
